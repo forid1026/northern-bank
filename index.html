@@ -10,12 +10,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to Northern Bank</h1>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Northern Bank</h1>
+        <div class="submit-area">
+            <h4>Log in</h4>
+            <input type="email" class="form-control mb-2" name="Email" placeholder="Enter Your Email" >
+            <input type="password" class="form-control mb-2" name="" placeholder="Password">
+            <button id="loginBtn" class="btn btn-success">Enter</button>
+        </div>
+
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit"> 00</span></h2>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id="withdrawBalance"></span>00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="currentBalance">1244</span> </h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h5>Deposit</h5>
+                    <input type="text" id="depositAmount" class="form-control mb-3" placeholder="$ amount you want to deposit">
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h5>Withdraw</h5>
+                    <input id="withdrawAmount" type="text" class="form-control mb-3" placeholder="$ amount you want to withdraw">
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- JS LINK -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
